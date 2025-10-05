@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://eliel-monfort.github.io/EMcybertrack-Site'
 languageCode = 'en-us'
 title = 'EM cybertrack'
 theme = 'PaperMod'
