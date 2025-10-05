@@ -11,8 +11,6 @@ theme = 'PaperMod'
   customCSS = ["css/extended/theme-vars-override.css", "css/extended/header-custom.css"]
   disableThemeToggle = true
 
-canonifyURLs = true
-
 [[menu.main]]
     name = "About"
     url = "/about/"
