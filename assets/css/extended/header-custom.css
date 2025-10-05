@@ -1,0 +1,6 @@
+nav#menu a,
+.menu a,
+header nav a,
+.nav .menu a {
+    font-size: 1.5rem !important;
+}

@@ -1,0 +1,32 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'EM cybertrack'
+theme = 'PaperMod'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+  customCSS = ["css/extended/theme-vars-override.css", "css/extended/header-custom.css"]
+  disableThemeToggle = true
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+[[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 3
+
+[[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 4
+
+[[menu.main]]
+    name = "Tips"
+    url = "/tips/"
+    weight = 5
