@@ -3,10 +3,6 @@ languageCode = 'en-us'
 title = 'EM cybertrack'
 theme = 'PaperMod'
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-
 [params]
   customCSS = ["css/extended/theme-vars-override.css", "css/extended/header-custom.css"]
   disableThemeToggle = true
