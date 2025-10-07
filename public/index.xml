@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>EM cybertrack - Cybersecurity Portfolio on EM cybertrack</title>
-    <link>http://localhost:1313/</link>
+    <link>https://emcybertrack.com/</link>
     <description>Recent content in EM cybertrack - Cybersecurity Portfolio on EM cybertrack</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emcybertrack.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Networking Is Essential In Cybersecurity</title>
-      <link>http://localhost:1313/posts/post2/</link>
+      <link>https://emcybertrack.com/posts/post2/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post2/</guid>
+      <guid>https://emcybertrack.com/posts/post2/</guid>
       <description>The value of professional connections.</description>
     </item>
     <item>
       <title>Study Tips For Cybersecurity Beginners</title>
-      <link>http://localhost:1313/posts/post3/</link>
+      <link>https://emcybertrack.com/posts/post3/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post3/</guid>
+      <guid>https://emcybertrack.com/posts/post3/</guid>
       <description>Essential study strategies for newcomers.</description>
     </item>
     <item>
       <title>Solving My First CTF Challenge</title>
-      <link>http://localhost:1313/posts/post4/</link>
+      <link>https://emcybertrack.com/posts/post4/</link>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post4/</guid>
+      <guid>https://emcybertrack.com/posts/post4/</guid>
       <description>What I learned from a beginner CTF.</description>
     </item>
     <item>
       <title>Building a Python Project for Network Analysis</title>
-      <link>http://localhost:1313/posts/post5/</link>
+      <link>https://emcybertrack.com/posts/post5/</link>
       <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post5/</guid>
+      <guid>https://emcybertrack.com/posts/post5/</guid>
       <description>Launching my first open-source cybersecurity tool.</description>
     </item>
     <item>
       <title>Getting My First Cybersecurity Certificate</title>
-      <link>http://localhost:1313/posts/post6/</link>
+      <link>https://emcybertrack.com/posts/post6/</link>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post6/</guid>
+      <guid>https://emcybertrack.com/posts/post6/</guid>
       <description>How I prepared for and obtained my first cert.</description>
     </item>
     <item>
       <title>My First Steps In Cybersecurity</title>
-      <link>http://localhost:1313/posts/post1/</link>
+      <link>https://emcybertrack.com/posts/post1/</link>
       <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post1/</guid>
+      <guid>https://emcybertrack.com/posts/post1/</guid>
       <description>How I began my cybersecurity learning journey.</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://emcybertrack.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://emcybertrack.com/about/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Who am I?&lt;/strong&gt;&lt;br&gt;
 A cybersecurity and computer science enthusiast with a B.Sc., passionate about sharing practical knowledge and helping others grow in tech.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Certifications &amp;amp; Degree&lt;/strong&gt;&lt;/p&gt;
@@ -79,30 +79,30 @@ For collaborations or questions, reach out by LinkedIn or email.&lt;/p&gt;</desc
     </item>
     <item>
       <title>CTFs</title>
-      <link>http://localhost:1313/experience/ctfs/</link>
+      <link>https://emcybertrack.com/experience/ctfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/ctfs/</guid>
+      <guid>https://emcybertrack.com/experience/ctfs/</guid>
       <description>&lt;p&gt;Browse my CTF writeups, categorized by type and difficulty, with solution walkthroughs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Knowledge</title>
-      <link>http://localhost:1313/experience/knowledge/</link>
+      <link>https://emcybertrack.com/experience/knowledge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/knowledge/</guid>
+      <guid>https://emcybertrack.com/experience/knowledge/</guid>
       <description>&lt;p&gt;All my personal summaries and notes, searchable and synced with my study notebook.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/experience/projects/</link>
+      <link>https://emcybertrack.com/experience/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/projects/</guid>
+      <guid>https://emcybertrack.com/experience/projects/</guid>
       <description>&lt;p&gt;A collection of my main projects, each with a full description and GitHub link.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tips</title>
-      <link>http://localhost:1313/tips/</link>
+      <link>https://emcybertrack.com/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tips/</guid>
+      <guid>https://emcybertrack.com/tips/</guid>
       <description>&lt;p&gt;Hands-on advice and tips for beginners and anyone seeking to excel in cybersecurity:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;How to approach certification exams&lt;/li&gt;
