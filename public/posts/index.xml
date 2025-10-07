@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blog Posts on EM cybertrack</title>
-    <link>https://emcybertrack.com/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Blog Posts on EM cybertrack</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://emcybertrack.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Networking Is Essential In Cybersecurity</title>
-      <link>https://emcybertrack.com/posts/post2/</link>
+      <link>http://localhost:1313/posts/post2/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/posts/post2/</guid>
+      <guid>http://localhost:1313/posts/post2/</guid>
       <description>The value of professional connections.</description>
     </item>
     <item>
       <title>Study Tips For Cybersecurity Beginners</title>
-      <link>https://emcybertrack.com/posts/post3/</link>
+      <link>http://localhost:1313/posts/post3/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/posts/post3/</guid>
+      <guid>http://localhost:1313/posts/post3/</guid>
       <description>Essential study strategies for newcomers.</description>
     </item>
     <item>
       <title>Solving My First CTF Challenge</title>
-      <link>https://emcybertrack.com/posts/post4/</link>
+      <link>http://localhost:1313/posts/post4/</link>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/posts/post4/</guid>
+      <guid>http://localhost:1313/posts/post4/</guid>
       <description>What I learned from a beginner CTF.</description>
     </item>
     <item>
       <title>Building a Python Project for Network Analysis</title>
-      <link>https://emcybertrack.com/posts/post5/</link>
+      <link>http://localhost:1313/posts/post5/</link>
       <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/posts/post5/</guid>
+      <guid>http://localhost:1313/posts/post5/</guid>
       <description>Launching my first open-source cybersecurity tool.</description>
     </item>
     <item>
       <title>Getting My First Cybersecurity Certificate</title>
-      <link>https://emcybertrack.com/posts/post6/</link>
+      <link>http://localhost:1313/posts/post6/</link>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/posts/post6/</guid>
+      <guid>http://localhost:1313/posts/post6/</guid>
       <description>How I prepared for and obtained my first cert.</description>
     </item>
     <item>
       <title>My First Steps In Cybersecurity</title>
-      <link>https://emcybertrack.com/posts/post1/</link>
+      <link>http://localhost:1313/posts/post1/</link>
       <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/posts/post1/</guid>
+      <guid>http://localhost:1313/posts/post1/</guid>
       <description>How I began my cybersecurity learning journey.</description>
     </item>
   </channel>

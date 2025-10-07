@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Experience on EM cybertrack</title>
-    <link>https://emcybertrack.com/experience/</link>
+    <link>http://localhost:1313/experience/</link>
     <description>Recent content in Experience on EM cybertrack</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en-us</language>
-    <atom:link href="https://emcybertrack.com/experience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CTFs</title>
-      <link>https://emcybertrack.com/experience/ctfs/</link>
+      <link>http://localhost:1313/experience/ctfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/experience/ctfs/</guid>
+      <guid>http://localhost:1313/experience/ctfs/</guid>
       <description>&lt;p&gt;Browse my CTF writeups, categorized by type and difficulty, with solution walkthroughs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Knowledge</title>
-      <link>https://emcybertrack.com/experience/knowledge/</link>
+      <link>http://localhost:1313/experience/knowledge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/experience/knowledge/</guid>
+      <guid>http://localhost:1313/experience/knowledge/</guid>
       <description>&lt;p&gt;All my personal summaries and notes, searchable and synced with my study notebook.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>https://emcybertrack.com/experience/projects/</link>
+      <link>http://localhost:1313/experience/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emcybertrack.com/experience/projects/</guid>
+      <guid>http://localhost:1313/experience/projects/</guid>
       <description>&lt;p&gt;A collection of my main projects, each with a full description and GitHub link.&lt;/p&gt;</description>
     </item>
   </channel>
