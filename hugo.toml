@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'EM cybertrack'
 theme = 'PaperMod'
 
+canonifyURLs = true
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
