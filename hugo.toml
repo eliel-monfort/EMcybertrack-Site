@@ -1,4 +1,4 @@
-baseURL = 'https://emcybertrack.com/'
+baseURL = 'https://emcybertrack.com'
 languageCode = 'en-us'
 title = 'EM cybertrack'
 theme = 'PaperMod'
