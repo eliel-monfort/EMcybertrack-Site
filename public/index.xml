@@ -9,6 +9,13 @@
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Network Security Fundamentals</title>
+      <link>http://localhost:1313/experience/knowledge/network-security/fundamentals/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/experience/knowledge/network-security/fundamentals/</guid>
+      <description>Basic concepts and principles of network security</description>
+    </item>
+    <item>
       <title>Why Networking Is Essential In Cybersecurity</title>
       <link>http://localhost:1313/posts/post2/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
@@ -83,13 +90,6 @@ For collaborations or questions, reach out by LinkedIn or email.&lt;/p&gt;</desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/experience/ctfs/</guid>
       <description>&lt;p&gt;Browse my CTF writeups, categorized by type and difficulty, with solution walkthroughs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Knowledge</title>
-      <link>http://localhost:1313/experience/knowledge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/knowledge/</guid>
-      <description>&lt;p&gt;All my personal summaries and notes, searchable and synced with my study notebook.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>

@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="knowledge-container">
+    <!-- Search Bar Section -->
+    <div class="knowledge-search-section">
+        <div class="search-wrapper">
+            <input type="text" id="knowledge-search" placeholder="Search knowledge base..." autocomplete="off">
+            <div class="search-icon">🔍</div>
+            <div id="search-suggestions" class="search-suggestions"></div>
+        </div>
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="knowledge-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="knowledge-sidebar">
+            <nav class="knowledge-nav">
+                <div class="nav-header">
+                    <h3>Topics</h3>
+                </div>
+                <ul class="nav-tree" id="knowledge-tree">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="knowledge-content" id="knowledge-main">
+            <article class="knowledge-article">
+                <header class="knowledge-header">
+                    <h1>{{ .Title }}</h1>
+                    {{ if .Date }}
+                    <div class="knowledge-meta">
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">
+                            Last updated: {{ .Date.Format "January 2, 2006" }}
+                        </time>
+                    </div>
+                    {{ end }}
+                </header>
+                <div class="knowledge-body">
+                    {{ .Content }}
+                </div>
+            </article>
+        </main>
+    </div>
+</div>
+
+<!-- Load Knowledge Base JavaScript -->
+<script src="/js/knowledge-base.js"></script>
+{{ end }}

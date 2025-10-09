@@ -201,3 +201,19 @@
     margin-bottom: 0 !important;
     flex-shrink: 0 !important;
 }
+
+
+/* Import Knowledge Base Styles */
+@import url('knowledge-base.css');
+
+
+/* Import Knowledge Base Styles */
+@import url('knowledge-base.css');
+
+/* Mark highlighting for search */
+mark {
+    background: #007acc;
+    color: white;
+    padding: 1px 2px;
+    border-radius: 2px;
+}
