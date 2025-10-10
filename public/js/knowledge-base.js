@@ -1,4 +1,4 @@
-// Knowledge Base - Automatic Content Loading from Hugo Pages
+// Knowledge Base JavaScript - Clean Implementation
 class KnowledgeBase {
     constructor() {
         this.searchInput = document.getElementById('knowledge-search');
@@ -6,7 +6,7 @@ class KnowledgeBase {
         this.knowledgeTree = document.getElementById('knowledge-tree');
         this.mainContent = document.getElementById('knowledge-main');
         
-        this.contentIndex = new Map(); // Store all content
+        this.contentIndex = new Map();
         this.searchData = [];
         this.currentSearchResults = [];
         this.selectedSuggestionIndex = -1;
@@ -24,18 +24,14 @@ class KnowledgeBase {
     
     async loadContentIndex() {
         try {
-            // Try to load the content index - you'll create this
             const response = await fetch('/index.json');
             if (response.ok) {
                 const data = await response.json();
                 this.processContentData(data);
             } else {
-                // Fallback to manual content if index doesn't exist
-                console.log('Content index not found, using fallback content');
                 this.loadFallbackContent();
             }
         } catch (error) {
-            console.log('Error loading content index:', error);
             this.loadFallbackContent();
         }
     }
@@ -44,13 +40,11 @@ class KnowledgeBase {
         this.searchData = [];
         const categories = new Map();
         
-        // Process all pages from Hugo
         pages.forEach(page => {
-            // Only process knowledge base pages
             if (page.section === 'knowledge' && page.type === 'knowledge') {
                 const pathParts = page.permalink.split('/').filter(p => p);
                 
-                if (pathParts.length >= 3) { // experience/knowledge/category/item
+                if (pathParts.length >= 3) {
                     const category = this.titleCase(pathParts[2].replace(/-/g, ' '));
                     const item = this.titleCase(pathParts[3] ? pathParts[3].replace(/-/g, ' ') : '');
                     
@@ -66,7 +60,6 @@ class KnowledgeBase {
                             date: page.date
                         });
                         
-                        // Add to search data
                         this.searchData.push({
                             title: page.title || item,
                             path: page.permalink,
@@ -83,7 +76,6 @@ class KnowledgeBase {
     }
     
     loadFallbackContent() {
-        // Fallback content structure for testing
         const fallbackData = new Map([
             ['Network Security', new Map([
                 ['Fundamentals', {
@@ -164,7 +156,6 @@ Secure Shell protocol for remote access and file transfer.`,
         
         this.contentIndex = fallbackData;
         
-        // Build search data from fallback
         this.searchData = [];
         for (const [category, items] of fallbackData) {
             for (const [item, data] of items) {
@@ -234,7 +225,6 @@ Secure Shell protocol for remote access and file transfer.`,
                     e.target.classList.remove('expanded');
                     subNav.classList.remove('expanded');
                 } else {
-                    // Close other expanded items
                     document.querySelectorAll('.nav-item.expanded').forEach(item => {
                         item.classList.remove('expanded');
                         if (item.nextElementSibling) {
@@ -248,7 +238,6 @@ Secure Shell protocol for remote access and file transfer.`,
             } else if (e.target.dataset.path) {
                 this.loadContentInPage(e.target.dataset.path, e.target.dataset.title);
                 
-                // Update active state
                 document.querySelectorAll('.nav-item.active').forEach(item => {
                     item.classList.remove('active');
                 });
@@ -258,7 +247,6 @@ Secure Shell protocol for remote access and file transfer.`,
     }
     
     loadContentInPage(path, title) {
-        // Find content by path
         let contentData = null;
         
         for (const [category, items] of this.contentIndex) {
@@ -345,13 +333,13 @@ Secure Shell protocol for remote access and file transfer.`,
                    item.category.toLowerCase().includes(queryLower);
         });
         
-        this.currentSearchResults = results.slice(0, 6);
+        this.currentSearchResults = results.slice(0, 5);
         this.renderSearchSuggestions(this.currentSearchResults, query);
     }
     
     renderSearchSuggestions(results, query) {
         if (results.length === 0) {
-            this.searchSuggestions.innerHTML = '<div class="search-empty">No results found</div>';
+            this.searchSuggestions.innerHTML = '<div class="suggestion-item">No results found</div>';
             this.showSearchSuggestions();
             return;
         }
@@ -370,7 +358,9 @@ Secure Shell protocol for remote access and file transfer.`,
     setupSuggestionClicks() {
         this.searchSuggestions.querySelectorAll('.suggestion-item').forEach(item => {
             item.addEventListener('click', () => {
-                this.selectSearchResult(item.dataset.path, item.dataset.title);
+                if (item.dataset.path && item.dataset.title) {
+                    this.selectSearchResult(item.dataset.path, item.dataset.title);
+                }
             });
         });
     }
@@ -380,7 +370,6 @@ Secure Shell protocol for remote access and file transfer.`,
         this.loadContentInPage(path, title);
         this.searchInput.value = '';
         
-        // Update navigation
         const navItem = document.querySelector(`[data-path="${path}"]`);
         if (navItem) {
             document.querySelectorAll('.nav-item.active').forEach(item => {
@@ -388,7 +377,6 @@ Secure Shell protocol for remote access and file transfer.`,
             });
             navItem.classList.add('active');
             
-            // Expand parent if needed
             const parentList = navItem.closest('ul.sub-nav');
             if (parentList) {
                 const parentCategory = parentList.previousElementSibling;
@@ -446,7 +434,9 @@ Secure Shell protocol for remote access and file transfer.`,
                     e.preventDefault();
                     if (this.selectedSuggestionIndex >= 0) {
                         const selectedSuggestion = suggestions[this.selectedSuggestionIndex];
-                        this.selectSearchResult(selectedSuggestion.dataset.path, selectedSuggestion.dataset.title);
+                        if (selectedSuggestion.dataset.path) {
+                            this.selectSearchResult(selectedSuggestion.dataset.path, selectedSuggestion.dataset.title);
+                        }
                     }
                     break;
                     
@@ -465,7 +455,6 @@ Secure Shell protocol for remote access and file transfer.`,
     }
 }
 
-// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new KnowledgeBase();
 });
