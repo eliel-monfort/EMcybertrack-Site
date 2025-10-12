@@ -1,8 +1,7 @@
 ---
 title: "Knowledge Base"
-description: "Cybersecurity learning notes and summaries organized by topics"
-layout: "knowledge-base"
-type: "knowledge"
+type: knowledge
+description: "My comprehensive cybersecurity knowledge base"
 ---
 
 # EM Cybersecurity Knowledge Base
@@ -28,3 +27,12 @@ This knowledge base covers various cybersecurity domains including:
 - **System Administration**: Hardening, monitoring, and incident response
 
 Navigate through the sidebar or use the search functionality to explore specific topics!
+
+## Getting Started
+
+If you're new to cybersecurity, I recommend starting with:
+1. Network Security Fundamentals
+2. Basic Penetration Testing Methodology
+3. Common Security Tools and Techniques
+
+Each section builds upon previous knowledge, so feel free to explore at your own pace.

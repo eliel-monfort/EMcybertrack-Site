@@ -9,13 +9,6 @@
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Network Security Fundamentals</title>
-      <link>http://localhost:1313/experience/knowledge/network-security/fundamentals/</link>
-      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/knowledge/network-security/fundamentals/</guid>
-      <description>Basic concepts and principles of network security</description>
-    </item>
-    <item>
       <title>Why Networking Is Essential In Cybersecurity</title>
       <link>http://localhost:1313/posts/post2/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
@@ -85,11 +78,32 @@ A cybersecurity and computer science enthusiast with a B.Sc., passionate about s
 For collaborations or questions, reach out by LinkedIn or email.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Active Directory Security</title>
+      <link>http://localhost:1313/experience/knowledge/penetration-testing/active-directory/methodology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/experience/knowledge/penetration-testing/active-directory/methodology/</guid>
+      <description>Active Directory security assessment and attack techniques</description>
+    </item>
+    <item>
       <title>CTFs</title>
       <link>http://localhost:1313/experience/ctfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/experience/ctfs/</guid>
       <description>&lt;p&gt;Browse my CTF writeups, categorized by type and difficulty, with solution walkthroughs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Security Fundamentals</title>
+      <link>http://localhost:1313/experience/knowledge/network-security/fundamentals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/experience/knowledge/network-security/fundamentals/</guid>
+      <description>Basic concepts and principles of network security</description>
+    </item>
+    <item>
+      <title>Penetration Testing Methodology</title>
+      <link>http://localhost:1313/experience/knowledge/penetration-testing/methodology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/experience/knowledge/penetration-testing/methodology/</guid>
+      <description>Systematic approach to conducting penetration tests</description>
     </item>
     <item>
       <title>Projects</title>

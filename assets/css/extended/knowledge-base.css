@@ -1,666 +1,277 @@
-/* Knowledge Base - FINAL PROFESSIONAL VERSION
-   This file styles ONLY the Knowledge Base pages (scoped to .knowledge-page)
-   Applied via list.html and single.html templates in layouts/knowledge/ */
+/* Prevent horizontal scrolling globally */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
 
-/* === MAIN CONTAINER === */
-/* Full viewport width container that breaks out of theme constraints */
+/* Main container */
 .knowledge-page .knowledge-container {
-    max-width: none;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    background: var(--theme);
-    min-height: 100vh;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw; /* Centers full-width container */
+  max-width: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: var(--theme);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-/* === SEARCH SECTION === */
-/* Top search bar area with centered search input */
+/* Search section */
 .knowledge-page .knowledge-search-section {
-    background: var(--theme);
-    border-bottom: none; /* Custom border added via ::after */
-    border-top: none;
-    padding: 32px 0;
-    margin: 0 6% 0 6%; /* Side margins for overall spacing */
-    width: 88%;
-    position: relative;
-    z-index: 100;
+  background: var(--theme);
+  border-bottom: none;
+  border-top: none;
+  padding: 32px 0;
+  margin: 0 6% 0 6%;
+  width: 88%;
+  position: relative;
+  z-index: 100;
 }
-
-/* Professional border that covers all content and a bit more */
 .knowledge-page .knowledge-search-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1500px;
-    max-width: 95%;
-    height: 1px;
-    background: var(--border);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+  max-width: 90%;
+  height: 1px;
+  background: var(--border);
 }
-
-/* Centers the search input within the section */
 .knowledge-page .search-wrapper {
-    max-width: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
-
-/* Main search input styling */
 .knowledge-page #knowledge-search {
-    width: 520px;
-    padding: 14px 45px 14px 18px; /* Right padding for search icon */
-    border: 2px solid var(--border);
-    border-radius: 6px;
-    font-size: 17px;
-    background: var(--entry);
-    color: var(--primary);
-    transition: all 0.3s ease;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 520px;
+  padding: 14px 45px 14px 18px;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  font-size: 17px;
+  background: var(--entry);
+  color: var(--primary);
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-sizing: border-box;
 }
-
-/* Focus state for search input */
 .knowledge-page #knowledge-search:focus {
-    outline: none;
-    border-color: #007acc;
-    box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.2);
-    transform: translateY(-1px); /* Subtle lift effect */
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 0 2px rgba(0,122,204,0.2);
+  transform: translateY(-1px);
 }
-
-/* Search icon positioned inside the search bar */
 .knowledge-page .search-icon {
-    position: absolute;
-    right: calc(50% - 245px); /* Calculated from center minus half search width */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    pointer-events: none;
+  position: absolute;
+  right: calc(50% - 245px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
 }
-
-/* SVG search icon */
 .knowledge-page .search-icon::before {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E");
-    opacity: 0.6;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E");
+  opacity: 0.6;
 }
 
-/* === SEARCH SUGGESTIONS === */
-/* Dropdown suggestions that appear below search input */
-.knowledge-page .search-suggestions {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 520px; /* Matches search input width */
-    margin: 0 auto;
-    background: var(--entry);
-    border: 2px solid var(--border);
-    border-top: none;
-    border-radius: 0 0 6px 6px;
-    max-height: 320px;
-    overflow-y: auto;
-    z-index: 1001;
-    display: none; /* Hidden by default */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-
-/* Show suggestions when active */
-.knowledge-page .search-suggestions.active {
-    display: block;
-}
-
-/* Individual suggestion items */
-.knowledge-page .suggestion-item {
-    padding: 14px 18px;
-    cursor: pointer;
-    border-bottom: 1px solid var(--border);
-    font-size: 15px;
-    transition: background 0.2s ease;
-}
-
-/* Suggestion hover and selected states */
-.knowledge-page .suggestion-item:hover,
-.knowledge-page .suggestion-item.selected {
-    background: var(--tertiary);
-}
-
-/* Suggestion title styling */
-.knowledge-page .suggestion-title {
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 3px;
-    font-size: 16px;
-}
-
-/* Suggestion path/breadcrumb styling */
-.knowledge-page .suggestion-path {
-    font-size: 13px;
-    color: var(--secondary);
-    opacity: 0.7;
-}
-
-/* === MAIN LAYOUT === */
-/* Flexbox layout containing sidebar and content */
+/* Layout wrapper */
 .knowledge-page .knowledge-layout {
-    display: flex;
-    max-width: 1400px; /* Maximum width constraint */
-    width: 100%;
-    margin: 0 auto; /* Centers the layout */
-    padding: 0 20px 0 60px; /* More left padding, less right */
-    min-height: calc(100vh - 150px);
-    box-sizing: border-box;
-    position: relative;
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 0 60px;
+  min-height: calc(100vh - 150px);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-/* === SIDEBAR === */
-/* Left navigation sidebar */
+/* Sidebar */
 .knowledge-page .knowledge-sidebar {
-    width: 280px;
-    min-width: 280px;
-    max-width: 280px;
-    flex-shrink: 0; /* Prevents shrinking */
-    background: transparent;
-    padding: 50px 40px 28px 0; /* Top padding to align with content */
-    height: fit-content;
-    position: sticky; /* Sticks to viewport when scrolling */
-    top: 10px;
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  flex-shrink: 0;
+  background: transparent;
+  padding: 50px 40px 28px 0;
+  height: fit-content;
+  position: sticky;
+  top: 10px;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
-
 .knowledge-page .knowledge-nav {
-    padding: 0;
+  padding: 0;
 }
-
-/* TOPICS header in sidebar */
 .knowledge-page .nav-header {
-    margin-bottom: 24px;
-    padding-bottom: 15px;
-    border-bottom: none;
-    position: relative;
+  margin-bottom: 24px;
+  padding-bottom: 15px;
+  position: relative;
 }
-
-/* Blue underline for TOPICS header */
 .knowledge-page .nav-header::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 65px;
-    height: 3px;
-    background: #007acc;
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  height: 3px;
+  background: #007acc;
+  border-radius: 2px;
 }
-
-/* TOPICS heading styling */
 .knowledge-page .nav-header h3 {
-    margin: 0;
-    color: var(--primary);
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
+  margin: 0;
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
 
-/* === NAVIGATION TREE === */
-/* Navigation list structure */
+/* Navigation tree */
 .knowledge-page .nav-tree {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-
 .knowledge-page .nav-tree li {
-    margin: 0;
+  margin: 0;
 }
-
-/* Navigation item styling */
 .knowledge-page .nav-item {
-    display: flex;
-    align-items: center;
-    padding: 11px 14px;
-    color: var(--secondary);
-    text-decoration: none;
-    border-radius: 6px;
-    margin: 3px 0;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    background: transparent;
-    outline: none;
-    box-shadow: none;
-    position: relative;
+  display: flex;
+  align-items: center;
+  padding: 11px 14px;
+  color: var(--secondary);
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 3px 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-
-/* Navigation item hover effects */
 .knowledge-page .nav-item:hover {
-    background: var(--tertiary);
-    color: var(--primary);
-    transform: translateX(3px); /* Subtle slide effect */
+  background: var(--tertiary);
+  color: var(--primary);
 }
-
-/* Active navigation item styling */
 .knowledge-page .nav-item.active {
-    background: var(--tertiary);
-    color: #007acc;
-    font-weight: 600;
+  background: var(--tertiary);
+  color: #007acc;
+  font-weight: 600;
 }
-
-/* Parent categories with children */
 .knowledge-page .nav-item.has-children {
-    font-weight: 600;
-    font-size: 16px;
+  font-weight: 600;
+  font-size: 16px;
 }
-
-/* Expand/collapse arrow for categories */
 .knowledge-page .nav-item.has-children::before {
-    content: '▶';
-    margin-right: 8px;
-    font-size: 11px;
-    transition: transform 0.2s ease;
-    color: var(--secondary);
-    opacity: 0.8;
+  content: '▶';
+  margin-right: 8px;
+  font-size: 11px;
+  transition: transform 0.2s ease;
+  color: var(--secondary);
+  opacity: 0.8;
+  flex-shrink: 0;
 }
-
-/* Rotated arrow for expanded categories */
 .knowledge-page .nav-item.has-children.expanded::before {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
-/* Nested navigation items */
 .knowledge-page .nav-tree ul {
-    list-style: none;
-    margin: 6px 0 0 0;
-    padding-left: 18px; /* Indentation for nesting */
-    max-height: 0; /* Collapsed by default */
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+  list-style: none;
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
-
-/* Expanded nested navigation */
 .knowledge-page .nav-tree ul.expanded {
-    max-height: 700px;
+  max-height: 700px;
 }
-
-/* Nested navigation item styling */
 .knowledge-page .nav-tree ul .nav-item {
-    font-size: 14px;
-    padding: 8px 12px;
-    margin: 2px 0;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 2px 0;
 }
 
-/* === CONTENT AREA === */
-/* Main content area (right side) */
+/* Content area */
 .knowledge-page .knowledge-content {
-    flex: 1; /* Takes remaining space */
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 28px 0 28px 25px; /* Left padding for spacing from sidebar */
-    min-width: 0;
-    box-sizing: border-box;
+  flex: 1;
+  width: 100%;
+  padding: 28px 0 28px 25px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-
-/* Article wrapper */
 .knowledge-page .knowledge-article {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    background: transparent;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
 }
 
-/* === ARTICLE HEADER === */
-/* Header section with title and meta info */
+/* Article header */
 .knowledge-page .knowledge-header {
-    width: 100%;
-    max-width: none;
-    margin-bottom: 35px;
-    padding-bottom: 22px;
-    border-bottom: 2px solid var(--border);
-    position: relative;
+  margin-bottom: 35px;
+  padding-bottom: 22px;
+  border-bottom: 2px solid var(--border);
+  position: relative;
+  box-sizing: border-box;
 }
-
-/* Blue accent under article header */
 .knowledge-page .knowledge-header::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 80px;
-    height: 2px;
-    background: #007acc;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background: #007acc;
 }
-
-/* Main article title */
 .knowledge-page .knowledge-header h1 {
-    margin: 0 0 12px 0;
-    color: var(--primary);
-    font-size: 38px;
-    font-weight: 800;
-    line-height: 1.2;
-    width: 100%;
-    max-width: none;
-    letter-spacing: -0.01em;
+  margin: 0 0 12px 0;
+  color: var(--primary);
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
-
-/* Article meta information (date, author, etc.) */
 .knowledge-page .knowledge-meta {
-    color: var(--secondary);
-    font-size: 15px;
-    font-weight: 500;
-    opacity: 0.8;
+  color: var(--secondary);
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.8;
 }
 
-/* === ARTICLE BODY === */
-/* Main article content area */
+/* Article body */
 .knowledge-page .knowledge-body {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
-    color: var(--content);
-    font-size: 18px;
+  line-height: 1.7;
+  color: var(--content);
+  font-size: 18px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-
-/* Ensures all content takes full width */
 .knowledge-page .knowledge-body * {
-    width: 100%;
-    max-width: none;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
 }
 
-/* === HEADINGS === */
-/* All heading elements styling */
-.knowledge-page .knowledge-body h1,
-.knowledge-page .knowledge-body h2,
-.knowledge-page .knowledge-body h3,
-.knowledge-page .knowledge-body h4,
-.knowledge-page .knowledge-body h5,
-.knowledge-page .knowledge-body h6 {
-    color: var(--primary);
-    margin: 32px 0 18px 0;
-    font-weight: 700;
-    width: 100%;
-    max-width: none;
-    letter-spacing: -0.01em;
-}
-
-/* H1 with bottom border */
-.knowledge-page .knowledge-body h1 { 
-    font-size: 34px;
-    border-bottom: 2px solid var(--border);
-    padding-bottom: 12px;
-}
-
-/* H2 with professional underline and blue accent */
-.knowledge-page .knowledge-body h2 { 
-    font-size: 28px;
-    padding: 0 0 8px 0;
-    margin: 32px 0 18px 0;
-    border-bottom: 1px solid var(--border);
-    position: relative;
-}
-
-/* Blue accent line under H2 */
-.knowledge-page .knowledge-body h2::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 50px;
-    height: 1px;
-    background: #007acc;
-}
-
-/* H3 with left accent line */
-.knowledge-page .knowledge-body h3 { 
-    font-size: 24px;
-    margin: 30px 0 16px 0;
-    position: relative;
-    color: var(--primary);
-}
-
-/* Blue left accent for H3 */
-.knowledge-page .knowledge-body h3::before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #007acc;
-    border-radius: 1px;
-}
-
-/* === TEXT CONTENT === */
-/* Paragraph styling */
-.knowledge-page .knowledge-body p {
-    margin: 20px 0;
-    line-height: 1.7;
-    width: 100%;
-    max-width: none;
-}
-
-/* List styling */
-.knowledge-page .knowledge-body ul,
-.knowledge-page .knowledge-body ol {
-    margin: 20px 0;
-    padding-left: 26px;
-    width: 100%;
-    max-width: none;
-}
-
-/* List item styling */
-.knowledge-page .knowledge-body li {
-    margin: 10px 0;
-    line-height: 1.6;
-    width: 100%;
-    max-width: none;
-    font-size: 17px;
-}
-
-/* Bold text styling */
-.knowledge-page .knowledge-body strong {
-    font-weight: 700;
-    color: var(--primary);
-}
-
-/* === CODE AND MEDIA === */
-/* Inline code styling */
-.knowledge-page .knowledge-body code {
-    background: var(--code-bg);
-    padding: 4px 7px;
-    border-radius: 4px;
-    font-family: 'Monaco', 'Consolas', monospace;
-    font-size: 16px;
-    border: 1px solid var(--border);
-}
-
-/* Code blocks, quotes, and tables spacing */
-.knowledge-page .knowledge-body pre,
-.knowledge-page .knowledge-body blockquote,
-.knowledge-page .knowledge-body table {
-    width: 100%;
-    max-width: none;
-    margin: 26px 0;
-}
-
-/* Code block styling */
+/* Allow code blocks to scroll horizontally */
 .knowledge-page .knowledge-body pre {
-    background: var(--code-bg);
-    padding: 22px;
-    border-radius: 6px;
-    overflow-x: auto;
-    border: 1px solid var(--border);
-    font-size: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-/* Blockquote styling */
-.knowledge-page .knowledge-body blockquote {
-    border-left: 4px solid #007acc;
-    background: var(--tertiary);
-    padding: 18px 22px;
-    border-radius: 0 6px 6px 0;
-    margin: 22px 0;
-    font-style: italic;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-/* Table styling */
-.knowledge-page .knowledge-body table {
-    border-collapse: collapse;
-    background: var(--entry);
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-/* Table cell styling */
-.knowledge-page .knowledge-body th,
-.knowledge-page .knowledge-body td {
-    padding: 14px 18px;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
-    font-size: 16px;
-}
-
-/* Table header styling */
-.knowledge-page .knowledge-body th {
-    background: var(--tertiary);
-    font-weight: 700;
-    color: var(--primary);
-}
-
-/* === MEDIA ELEMENTS === */
-/* Image styling with border and shadow */
-.knowledge-page .knowledge-body img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin: 22px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border: 1px solid var(--border);
-}
-
-/* Video styling */
-.knowledge-page .knowledge-body video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin: 22px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-/* Iframe styling (embedded content) */
-.knowledge-page .knowledge-body iframe {
-    max-width: 100%;
-    border-radius: 6px;
-    margin: 22px 0;
-    border: 1px solid var(--border);
-}
-
-/* === RESPONSIVE DESIGN === */
-/* Mobile and tablet responsive styles */
-@media (max-width: 768px) {
-    /* Stack layout vertically on mobile */
-    .knowledge-page .knowledge-layout {
-        flex-direction: column;
-        padding: 0 4%;
-        max-width: none;
-    }
-    
-    /* Full width sidebar on mobile */
-    .knowledge-page .knowledge-sidebar {
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-        padding: 20px 0;
-        margin-bottom: 25px;
-        margin-right: 0;
-        max-height: 250px;
-        overflow-y: auto;
-        background: var(--entry);
-        border-radius: 6px;
-        border: 1px solid var(--border);
-    }
-    
-    /* Remove content padding on mobile */
-    .knowledge-page .knowledge-content {
-        padding: 0;
-    }
-    
-    /* Adjust search section margins */
-    .knowledge-page .knowledge-search-section {
-        margin: 0 4%;
-        width: 92%;
-    }
-    
-    /* Full width search on mobile */
-    .knowledge-page #knowledge-search {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    /* Reposition search icon for mobile */
-    .knowledge-page .search-icon {
-        right: 20px;
-    }
-    
-    /* Smaller heading on mobile */
-    .knowledge-page .knowledge-header h1 {
-        font-size: 30px;
-    }
-    
-    /* Smaller body text on mobile */
-    .knowledge-page .knowledge-body {
-        font-size: 16px;
-    }
-    
-    /* Adjust H3 accent position for mobile */
-    .knowledge-page .knowledge-body h3::before {
-        left: -10px;
-    }
-}
-
-/* === UTILITIES === */
-/* Search result highlighting */
-.knowledge-page mark {
-    background: #007acc;
-    color: white;
-    padding: 2px 4px;
-    border-radius: 3px;
-    font-weight: 600;
-}
-
-/* === SCROLLBAR STYLING === */
-/* Custom scrollbar for sidebar */
-.knowledge-page .knowledge-sidebar::-webkit-scrollbar {
-    width: 6px;
-}
-
-.knowledge-page .knowledge-sidebar::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.knowledge-page .knowledge-sidebar::-webkit-scrollbar-thumb {
-    background: var(--border);
-    border-radius: 3px;
-}
-
-.knowledge-page .knowledge-sidebar::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary);
+  overflow-x: auto;
 }

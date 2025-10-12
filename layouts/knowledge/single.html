@@ -3,16 +3,14 @@
 
 <div class="knowledge-page">
     <div class="knowledge-container">
-        <!-- Search Bar Section -->
+        <!-- Search Section -->
         <div class="knowledge-search-section">
             <div class="search-wrapper">
                 <input type="text" id="knowledge-search" placeholder="Search knowledge base..." autocomplete="off">
                 <div class="search-icon"></div>
-                <div id="search-suggestions" class="search-suggestions"></div>
             </div>
         </div>
 
-        <!-- Main Content Layout -->
         <div class="knowledge-layout">
             <!-- Sidebar Navigation -->
             <aside class="knowledge-sidebar">
@@ -21,21 +19,23 @@
                         <h3>Topics</h3>
                     </div>
                     <ul class="nav-tree" id="knowledge-tree">
-                        <!-- Will be populated by JavaScript -->
+                        <li class="nav-item">Loading navigation...</li>
                     </ul>
                 </nav>
             </aside>
 
             <!-- Main Content Area -->
-            <main class="knowledge-content" id="knowledge-main">
-                <article class="knowledge-article">
+            <main class="knowledge-content">
+                <div id="content-loader" style="display: none; text-align: center; padding: 40px; color: var(--secondary);">
+                    <div style="font-size: 18px;">Loading...</div>
+                </div>
+                
+                <article class="knowledge-article" id="main-content">
                     <header class="knowledge-header">
                         <h1>{{ .Title }}</h1>
                         {{ if .Date }}
                         <div class="knowledge-meta">
-                            <time datetime="{{ .Date.Format "2006-01-02" }}">
-                                Last updated: {{ .Date.Format "January 2, 2006" }}
-                            </time>
+                            Last updated: {{ .Date.Format "January 2, 2006" }}
                         </div>
                         {{ end }}
                     </header>
@@ -48,6 +48,5 @@
     </div>
 </div>
 
-<!-- Load Knowledge Base JavaScript -->
-<script src="/js/knowledge-base.js"></script>
+<script src="/js/knowledge-navigation.js"></script>
 {{ end }}
