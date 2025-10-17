@@ -3,7 +3,7 @@ title: "My First Steps In Cybersecurity"
 date: 2025-09-17
 summary: "How I began my cybersecurity learning journey."
 cover:
- image: "/images/post1/cover-image.png"
+ image: "/images/posts/post1/cover-image.png"
  alt: "Image description"
  caption: "Image caption (optional)"
  relative: true
