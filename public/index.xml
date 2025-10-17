@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>EM cybertrack - Cybersecurity Portfolio on EM cybertrack</title>
+    <title>EM Cybertrack Websit on EM cybertrack</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in EM cybertrack - Cybersecurity Portfolio on EM cybertrack</description>
+    <description>Recent content in EM Cybertrack Websit on EM cybertrack</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
@@ -55,27 +55,11 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Who am I?&lt;/strong&gt;&lt;br&gt;
-A cybersecurity and computer science enthusiast with a B.Sc., passionate about sharing practical knowledge and helping others grow in tech.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Certifications &amp;amp; Degree&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;B.Sc. Computer Science&lt;/li&gt;
-&lt;li&gt;Cybersecurity courses &amp;amp; certificates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Links:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/YourGitHubUser&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/YourLinkedInUser/&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tryhackme.com/p/YourTHMUser&#34;&gt;TryHackMe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://app.hackthebox.com/profile/YourHTBUser&#34;&gt;HackTheBox&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Where are you from?&lt;/em&gt; Israel&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;How to contact me?&lt;/em&gt; Use LinkedIn or the email on my GitHub profile&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Contact:&lt;/strong&gt;&lt;br&gt;
-For collaborations or questions, reach out by LinkedIn or email.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;my-cybersecurity-journey&#34;&gt;My Cybersecurity Journey&lt;/h3&gt;
+&lt;p&gt;Hi, I&amp;rsquo;m &lt;strong&gt;Eliel Monfort&lt;/strong&gt; — a recent Computer Science graduate passionate about cybersecurity, especially the offensive side. This site documents my journey from curious beginner to aspiring security professional, sharing everything I learn and achieve along the way.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;the-beginning&#34;&gt;The Beginning&lt;/h3&gt;
+&lt;p&gt;My path into IT started at age of 14 when I began university-level computer science courses alongside high school. What fascinated me wasn&amp;rsquo;t just writing code — it was understanding how systems work, how they can be exploited, and most importantly, how to think like an attacker.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Active Directory Security</title>

@@ -1,10 +1,5 @@
 # To-Do List:
 
-### Knowledge Section:
-
-- Add a left bar to organize notes in topics and subtopics
-- Add a smart and powerful search bar
-
 ### Project Section:
 
 - Add all my project like the post
@@ -24,10 +19,6 @@
 
 - Add tags to put posts in categories
 - Home page will have most resent post
-
-### Home Page:
-
-- Add contact links icons
 
 ### About Section:
 

@@ -1,18 +1,14 @@
-/* --------------------------------------------------------
-   Global Theme Color Variables (Dark Mode)
--------------------------------------------------------- */
-:root {
-    --theme: #23252b;
-    --entry: #23252b;
-    --primary: #ebebeb;
-    --secondary: #ababab;
-    --tertiary: #23252b;
-    --content: #ebebeb;
-    --hljs-bg: #23252b;
-    --code-bg: #23252b;
-    --border: #36383b;
+/* Hide heading anchor icons site-wide */
+a.header-anchor,
+a.anchor,
+.anchor-link {
+  display: none !important;
 }
 
+/* ============================================================
+   THEME COLORS - Dark Mode
+============================================================ */
+:root,
 .dark {
     --theme: #23252b;
     --entry: #23252b;
@@ -25,37 +21,17 @@
     --border: #36383b;
 }
 
-/* --------------------------------------------------------
-   Default Post Card Style (non-grid)
--------------------------------------------------------- */
-.post-entry, .post, .entry {
-    background: linear-gradient(135deg, #24272f 60%, #2f353e 100%);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    border-radius: 16px;
-    border: 1px solid #393c44;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.post-entry:hover, .post:hover, .entry:hover {
-    box-shadow: 0 8px 24px rgba(51,180,255,0.07);
-    transform: translateY(-5px) scale(1.03);
-    border-color: #33b4ff44;
-}
-
-/* --------------------------------------------------------
-   Wider Main Content Area
--------------------------------------------------------- */
+/* ============================================================
+   LAYOUT - Main Content & Header
+============================================================ */
 .main {
-    max-width: 1080px;
+    max-width: 1000px;
     width: 98vw;
     margin: 0 auto;
     padding: 0 1.7rem;
     box-sizing: border-box;
 }
 
-/* --------------------------------------------------------
-   Enhanced Header (Site Title + Menu)
--------------------------------------------------------- */
 .header {
     width: 100% !important;
     max-width: 100% !important;
@@ -73,7 +49,7 @@
 
 .logo, 
 .logo a {
-    font-size: 2.5rem !important;
+    font-size: 2.2rem !important;
     font-weight: 700 !important;
 }
 
@@ -86,23 +62,30 @@
     padding: 0.75rem 1.5rem !important;
 }
 
-@media (max-width: 800px) {
-    .nav {
-        padding: 1.5rem 2rem !important;
-    }
-    
-    .logo, .logo a {
-        font-size: 1.8rem !important;
-    }
-    
-    .menu a {
-        padding: 0.6rem 1rem !important;
-    }
+/* ============================================================
+   POST CARDS - Default Style
+============================================================ */
+.post-entry, 
+.post, 
+.entry {
+    background: linear-gradient(135deg, #24272f 60%, #2f353e 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    border: 1px solid #393c44;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* --------------------------------------------------------
-   Grid Layout For Blog Posts (3-2-1 columns)
--------------------------------------------------------- */
+.post-entry:hover, 
+.post:hover, 
+.entry:hover {
+    box-shadow: 0 8px 24px rgba(51,180,255,0.07);
+    transform: translateY(-5px) scale(1.03);
+    border-color: #33b4ff44;
+}
+
+/* ============================================================
+   GRID LAYOUT - Blog Posts (3-2-1 Columns)
+============================================================ */
 .posts-grid {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(320px, 1fr)) !important;
@@ -111,48 +94,26 @@
     padding-bottom: 1.5rem;
 }
 
-@media (max-width: 1200px) {
-    .main {
-        max-width: 98vw;
-    }
-    .posts-grid {
-        grid-template-columns: repeat(2, minmax(280px, 1fr)) !important;
-    }
-}
-
-@media (max-width: 800px) {
-    .main, .header {
-        max-width: 98vw;
-    }
-    .posts-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1.1rem !important;
-    }
-}
-
-/* --------------------------------------------------------
-   Grid Card Styles (All Cards Including First)
--------------------------------------------------------- */
+/* Grid Card Styles */
 .posts-grid .first-entry,
 .posts-grid .post-entry,
 .posts-grid .tag-entry {
     min-height: 325px !important;
     min-width: 0;
+    width: 100% !important;
+    max-width: unset !important;
+    height: 100% !important;
     background: linear-gradient(135deg, #21232a 70%, #31343b 100%);
     box-shadow: 0 2px 14px 0 rgba(0,0,0,0.10), 0 2px 4px rgba(50,196,255,0.04);
     border-radius: 22px;
     border: 1.5px solid #31363e;
     padding: 2.2rem 1.6rem 1.6rem 1.6rem;
     transition: box-shadow 0.2s, transform 0.2s;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    align-self: stretch;
-    width: 100% !important;
-    max-width: unset !important;
-    height: 100% !important;
     justify-content: flex-start !important;
+    align-items: stretch;
+    margin: 0 !important;
 }
 
 .posts-grid .first-entry:hover,
@@ -163,22 +124,7 @@
     border-color: #33b4ff44;
 }
 
-/* --------------------------------------------------------
-   Content Positioning For All Posts
--------------------------------------------------------- */
-.posts-grid .first-entry,
-.posts-grid .post-entry,
-.posts-grid .tag-entry {
-    grid-column: auto !important;
-    grid-row: auto !important;
-    grid-column-start: auto !important;
-    grid-column-end: auto !important;
-    grid-row-start: auto !important;
-    grid-row-end: auto !important;
-    justify-self: stretch !important;
-    margin: 0 !important;
-}
-
+/* Grid Card Content Layout */
 .posts-grid .first-entry .entry-header,
 .posts-grid .post-entry .entry-header,
 .posts-grid .tag-entry .entry-header {
@@ -189,31 +135,83 @@
 .posts-grid .first-entry .entry-content,
 .posts-grid .post-entry .entry-content,
 .posts-grid .tag-entry .entry-content {
-    margin-top: 0 !important;
-    margin-bottom: 1rem !important;
+    margin: 0 0 1rem 0 !important;
     flex-grow: 1 !important;
 }
 
 .posts-grid .first-entry .entry-footer,
 .posts-grid .post-entry .entry-footer,
 .posts-grid .tag-entry .entry-footer {
-    margin-top: auto !important;
-    margin-bottom: 0 !important;
+    margin: auto 0 0 0 !important;
     flex-shrink: 0 !important;
 }
 
+/* ============================================================
+   HOME PAGE - Info Section
+============================================================ */
+.home-info .entry-header h1 {
+    font-size: 2rem !important;
+}
 
-/* Import Knowledge Base Styles */
-@import url('knowledge-base.css');
+.home-info .entry-content {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+}
 
+.home-info .entry-content p {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+}
 
-/* Import Knowledge Base Styles */
-@import url('knowledge-base.css');
-
-/* Mark highlighting for search */
+/* ============================================================
+   SEARCH - Mark Highlighting
+============================================================ */
 mark {
     background: #007acc;
     color: white;
     padding: 1px 2px;
     border-radius: 2px;
 }
+
+/* ============================================================
+   RESPONSIVE DESIGN
+============================================================ */
+@media (max-width: 1200px) {
+    .main {
+        max-width: 98vw;
+    }
+    
+    .posts-grid {
+        grid-template-columns: repeat(2, minmax(280px, 1fr)) !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .main, 
+    .header {
+        max-width: 98vw;
+    }
+    
+    .nav {
+        padding: 1.5rem 2rem !important;
+    }
+    
+    .logo, 
+    .logo a {
+        font-size: 1.8rem !important;
+    }
+    
+    .menu a {
+        padding: 0.6rem 1rem !important;
+    }
+    
+    .posts-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.1rem !important;
+    }
+}
+
+/* ============================================================
+   EXTERNAL IMPORTS
+============================================================ */
+@import url('knowledge-base.css');

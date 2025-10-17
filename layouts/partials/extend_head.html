@@ -1,2 +1,5 @@
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" href="{{ "/favicon.ico" | relURL }}" type="image/x-icon" />
+<link rel="shortcut icon" href="{{ "/favicon.ico" | relURL }}" type="image/x-icon" />
+{{ if .Params.showAboutIcons }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pQVxrW..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+{{ end }}

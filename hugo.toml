@@ -7,8 +7,11 @@ theme = 'PaperMod'
   [caches.images]
     dir = ':cacheDir/images'
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
-  customCSS = ["css/extended/theme-vars-override.css", "css/extended/header-custom.css"]
+  customCSS = ["css/extended/theme-vars-override.css", "css/extended/header-custom.css", "css/extended/about-page.css"]
   disableThemeToggle = true
 
 [[menu.main]]
@@ -30,3 +33,32 @@ theme = 'PaperMod'
     name = "Tips"
     url = "/tips/"
     weight = 5
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/eliel-monfort/"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/eliel-monfort/"
+
+[[params.socialIcons]]
+name = "hackthebox"
+url = "https://app.hackthebox.com/profile/2083370/"
+
+[[params.socialIcons]]
+name = "tryhackme"
+url = "https://tryhackme.com/p/Eliel.M/"
+
+[params.homeInfoParams]
+Title = "Hello."
+Content = """
+**Welcome to EM cybertrack** - my cybersecurity learning website.  
+Here you'll find my certifications, hands-on projects, CTF WriteUps, study notes, and blog posts documenting  
+my journey in cybersecurity.  
+<br>
+Whether you're hiring, learning, or exploring, everything is open for you to discover.  
+If you’re new here, please check the **[about me](https://emcybertrack.com/about/)** page.  
+<br>
+-- Eliel Monfort
+"""
