@@ -102,53 +102,24 @@
     </nav>
 </header>
 <main class="main">
-<link rel="stylesheet" href="/css/extended/knowledge-base.css">
-
-<div class="knowledge-page">
-    <div class="knowledge-container">
-        
-        <div class="knowledge-search-section">
-            <div class="search-wrapper">
-                <input type="text" id="knowledge-search" placeholder="Search knowledge base..." autocomplete="off">
-                <div class="search-icon"></div>
-            </div>
-        </div>
-
-        <div class="knowledge-layout">
-            
-            <aside class="knowledge-sidebar">
-                <nav class="knowledge-nav">
-                    <div class="nav-header">
-                        <h3>Topics</h3>
-                    </div>
-                    <ul class="nav-tree" id="knowledge-tree">
-                        <li class="nav-item">Loading navigation...</li>
-                    </ul>
-                </nav>
-            </aside>
-
-            
-            <main class="knowledge-content">
-                <div id="content-loader" style="display: none; text-align: center; padding: 40px; color: var(--secondary);">
-                    <div style="font-size: 18px;">Loading...</div>
+        <header class="page-header">
+            <h1>
+                Knowledge Base
+            </h1>
+                <div class="post-description">
+                    My comprehensive cybersecurity knowledge base
                 </div>
-                
-                <article class="knowledge-article" id="main-content">
-                    <header class="knowledge-header">
-                        <h1>Knowledge Base</h1>
-                        
-                    </header>
-                    <div class="knowledge-body">
-                        <h1 id="em-cybersecurity-knowledge-base">EM Cybersecurity Knowledge Base</h1>
+        </header>
+        <div class="post-content"><h1 id="em-cybersecurity-knowledge-base">EM Cybersecurity Knowledge Base<a hidden class="anchor" aria-hidden="true" href="#em-cybersecurity-knowledge-base">#</a></h1>
 <p>Welcome to my comprehensive cybersecurity knowledge base! This repository contains all my learning notes, summaries, and insights gathered throughout my cybersecurity journey.</p>
-<h2 id="how-to-use-this-knowledge-base">How to Use This Knowledge Base</h2>
+<h2 id="how-to-use-this-knowledge-base">How to Use This Knowledge Base<a hidden class="anchor" aria-hidden="true" href="#how-to-use-this-knowledge-base">#</a></h2>
 <ul>
 <li><strong>Browse by Categories</strong>: Use the sidebar to navigate through different cybersecurity topics and subtopics</li>
 <li><strong>Smart Search</strong>: Use the search bar above to quickly find specific information across all notes</li>
 <li><strong>Progressive Learning</strong>: Topics are organized from foundational concepts to advanced techniques</li>
 <li><strong>Regular Updates</strong>: This knowledge base is continuously updated with new learning materials</li>
 </ul>
-<h2 id="coverage-areas">Coverage Areas</h2>
+<h2 id="coverage-areas">Coverage Areas<a hidden class="anchor" aria-hidden="true" href="#coverage-areas">#</a></h2>
 <p>This knowledge base covers various cybersecurity domains including:</p>
 <ul>
 <li><strong>Network Security</strong>: Protocols, monitoring, and defense strategies</li>
@@ -159,7 +130,7 @@
 <li><strong>System Administration</strong>: Hardening, monitoring, and incident response</li>
 </ul>
 <p>Navigate through the sidebar or use the search functionality to explore specific topics!</p>
-<h2 id="getting-started">Getting Started</h2>
+<h2 id="getting-started">Getting Started<a hidden class="anchor" aria-hidden="true" href="#getting-started">#</a></h2>
 <p>If you&rsquo;re new to cybersecurity, I recommend starting with:</p>
 <ol>
 <li>Network Security Fundamentals</li>
@@ -168,15 +139,57 @@
 </ol>
 <p>Each section builds upon previous knowledge, so feel free to explore at your own pace.</p>
 
-                    </div>
-                </article>
-            </main>
+
         </div>
+
+    <div class="posts-grid">
+            <article class="post-entry"> 
+                <header class="entry-header">
+                    <h2 class="entry-hint-parent">Active Directory Security
+                    </h2>
+                </header>
+                    <div class="entry-content">
+                        <p>Active Directory Security Active Directory is a critical component of most enterprise networks, making it a high-value target for attackers. Understanding AD security is essential for both offensive and defensive cybersecurity practices.
+Overview This section covers:
+Active Directory architecture and components Common AD attack vectors and techniques Post-exploitation techniques in AD environments Detection and mitigation strategies AD security best practices Key Components Domain Controllers: Core AD servers Domains: Security boundaries within AD Organizational Units: Container objects for administration Group Policy: Centralized management mechanism Trust Relationships: Connections between domains/forests Common Attack Vectors Kerberoasting AS-REP Roasting DCSync attacks Golden/Silver ticket attacks Pass-the-Hash techniques LDAP injection Privilege escalation paths Explore the subtopics for detailed attack methodologies and defense strategies.
+</p>
+                    </div>
+                    <footer class="entry-footer"></footer>
+                <a class="entry-link" aria-label="post link to Active Directory Security" href="http://localhost:1313/experience/knowledge/penetration-testing/active-directory/methodology/"></a>
+            </article>
+            <article class="post-entry"> 
+                <header class="entry-header">
+                    <h2 class="entry-hint-parent">Network Security Fundamentals
+                    </h2>
+                </header>
+                    <div class="entry-content">
+                        <p>Network Security Fundamentals Understanding the basic principles of network security is crucial for building a strong foundation in cybersecurity.
+Core Principles Confidentiality Ensuring that sensitive information is accessible only to authorized users.
+Integrity Maintaining the accuracy and completeness of data during transmission and storage.
+Availability Ensuring that network resources and services remain accessible to authorized users when needed.
+Defense Strategies Implement strong authentication mechanisms Use encryption for data in transit Deploy intrusion detection systems Regular security monitoring and logging Network segmentation and access controls Next Steps Continue with more advanced network security topics to deepen your understanding of protection mechanisms and threat mitigation strategies.
+</p>
+                    </div>
+                    <footer class="entry-footer"></footer>
+                <a class="entry-link" aria-label="post link to Network Security Fundamentals" href="http://localhost:1313/experience/knowledge/network-security/fundamentals/"></a>
+            </article>
+            <article class="post-entry"> 
+                <header class="entry-header">
+                    <h2 class="entry-hint-parent">Penetration Testing Methodology
+                    </h2>
+                </header>
+                    <div class="entry-content">
+                        <p>Penetration Testing Methodology A systematic methodology ensures thorough and consistent penetration testing while maintaining ethical standards and maximizing value for the organization.
+Standard Methodology Frameworks OWASP Testing Guide Comprehensive methodology for web application security testing.
+NIST SP 800-115 Technical guide to information security testing and assessment.
+OSSTMM (Open Source Security Testing Methodology Manual) Peer-reviewed methodology for security testing.
+Testing Phases 1. Pre-Engagement Define scope and objectives Obtain proper authorization Sign legal agreements Establish communication protocols 2. Information Gathering Passive Reconnaissance: Gathering information without direct interaction Active Reconnaissance: Direct interaction with target systems OSINT: Open Source Intelligence gathering 3. Vulnerability Assessment Automated scanning Manual verification Vulnerability prioritization False positive elimination 4. Exploitation Proof of concept development Exploitation attempts Privilege escalation Lateral movement 5. Post-Exploitation Data collection Persistence establishment Impact assessment Evidence gathering 6. Reporting Executive summary Technical findings Risk assessment Remediation recommendations Best Practices Always obtain written authorization Maintain detailed documentation Follow responsible disclosure Minimize system impact Protect confidential information Tools and Techniques Continue exploring specific tools and techniques used in each phase of penetration testing.
+</p>
+                    </div>
+                    <footer class="entry-footer"></footer>
+                <a class="entry-link" aria-label="post link to Penetration Testing Methodology" href="http://localhost:1313/experience/knowledge/penetration-testing/methodology/"></a>
+            </article>
     </div>
-</div>
-
-<script src="/js/knowledge-navigation.js"></script>
-
     </main>
     
 <footer class="footer">

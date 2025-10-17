@@ -27,3 +27,4 @@
 ### General:
 
 - Start uploading new initial content
+- fix the HackTheBox link
