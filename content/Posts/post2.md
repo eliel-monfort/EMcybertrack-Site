@@ -5,7 +5,6 @@ summary: "The value of professional connections."
 cover:
  image: "/images/posts/post2/my-image.png"
  alt: "Image description"
- caption: "Image caption (optional)"
  relative: true
 ---
 

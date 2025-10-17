@@ -5,7 +5,6 @@ summary: "How I began my cybersecurity learning journey."
 cover:
  image: "/images/posts/post1/cover-image.png"
  alt: "Image description"
- caption: "Image caption (optional)"
  relative: true
 ---
 
