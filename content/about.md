@@ -29,31 +29,24 @@ I'm currently building hands-on expertise through:
 
 ---
 
-### My Current Skillset
-
-**Languages:** Python, Java, C/C++, Assembly x86, Bash, HTML/CSS, JavaScript  
-**Security Tools:** Wireshark, Nmap, Scapy, Gobuster, Burp Suite  
-**Platforms:** Linux/Unix, Azure, Git, HackTheBox, TryHackMe  
-**Focus Areas:** Network Security, Penetration Testing, Red Teaming, Reverse Engineering
-
----
-
-### Education & Certifications
+### My Education & Certifications
 
 <div class="certs-section">
-<div class="cert-grid academic">
-  <div class="cert-item">
-    <div class="cert-badge academic-badge">
-      <img src="/images/about/BD_CS.png" alt="B.Sc Computer Science Degree">
-    </div>
-    <div class="cert-info">
-      <h5>B.Sc in Computer Science</h5>
-      <p class="cert-org">Lev Academic Center</p>
-      <p class="cert-date">September 2021 - October 2025</p>
-      <p class="cert-spec">Networks, Software Engineering, Reverse Engineering</p>
+<a href="/images/about/BD_CS.png" target="_blank">
+  <div class="cert-grid academic">
+    <div class="cert-item">
+      <div class="cert-badge academic-badge">
+        <img src="/images/about/BD_CS.png" alt="B.Sc Computer Science Degree">
+      </div>
+      <div class="cert-info">
+        <h5>B.Sc in Computer Science</h5>
+        <p class="cert-org">Lev Academic Center</p>
+        <p class="cert-date">September 2021 - October 2025</p>
+        <p class="cert-spec">Networks, Software Engineering, Reverse Engineering</p>
+      </div>
     </div>
   </div>
-</div>
+</a>
 <div class="cert-grid pro">
   <!-- Certification 1 -->
   <div class="cert-item">
@@ -127,9 +120,9 @@ Whether you're hiring, collaborating on a project, or just want to discuss cyber
 <div class="about-contact">
   <a href="mailto:elielmonf@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
   <a href="https://linkedin.com/in/eliel-monfort" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
-  <a href="https://discord.gg/your-discord" target="_blank" class="icon-link"><i class="fab fa-discord"></i></a>
+  <a href="https://discordapp.com/users/1135535652180607066" target="_blank" class="icon-link"><i class="fab fa-discord"></i></a>
 </div>
 
 ---
 
-<div style="text-align: center; font-style: italic; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #393c44;">*"If you want to master something, teach it."* — Richard Feynman</div>
+<div style="text-align: center; font-style: italic; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #393c44;">"If you want to master something, teach it." — Richard Feynman</div>

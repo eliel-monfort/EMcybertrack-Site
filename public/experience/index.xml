@@ -15,6 +15,14 @@
       <description>&lt;p&gt;Browse my CTF writeups, categorized by type and difficulty, with solution walkthroughs.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Note Base</title>
+      <link>http://localhost:1313/experience/note-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/experience/note-base/</guid>
+      <description>&lt;p&gt;[Here will be the subdomain link]
+&lt;a href=&#34;https://note-base.emcybertrack.com/&#34;&gt;https://note-base.emcybertrack.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Projects</title>
       <link>http://localhost:1313/experience/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

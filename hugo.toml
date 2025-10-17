@@ -4,35 +4,39 @@ title = 'EM cybertrack'
 theme = 'PaperMod'
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
 
 [markup.goldmark.renderer]
 unsafe = true
 
 [params]
-  customCSS = ["css/extended/theme-vars-override.css", "css/extended/header-custom.css", "css/extended/about-page.css"]
-  disableThemeToggle = true
+customCSS = [
+    "css/extended/theme-vars-override.css",
+    "css/extended/header-custom.css",
+    "css/extended/about-page.css",
+]
+disableThemeToggle = true
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
+name = "About"
+url = "/about/"
+weight = 2
 
 [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 3
+name = "Posts"
+url = "/posts/"
+weight = 3
 
 [[menu.main]]
-    name = "Experience"
-    url = "/experience/"
-    weight = 4
+name = "Experience"
+url = "/experience/"
+weight = 4
 
 [[menu.main]]
-    name = "Tips"
-    url = "/tips/"
-    weight = 5
+name = "Tips"
+url = "/tips/"
+weight = 5
 
 [[params.socialIcons]]
 name = "linkedin"
@@ -44,7 +48,7 @@ url = "https://github.com/eliel-monfort/"
 
 [[params.socialIcons]]
 name = "hackthebox"
-url = "https://app.hackthebox.com/profile/2083370/"
+url = "https://app.hackthebox.com/profile/2083370"
 
 [[params.socialIcons]]
 name = "tryhackme"

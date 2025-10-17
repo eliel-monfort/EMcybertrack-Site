@@ -62,13 +62,6 @@
 &lt;p&gt;My path into IT started at age of 14 when I began university-level computer science courses alongside high school. What fascinated me wasn&amp;rsquo;t just writing code — it was understanding how systems work, how they can be exploited, and most importantly, how to think like an attacker.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Active Directory Security</title>
-      <link>http://localhost:1313/experience/knowledge/penetration-testing/active-directory/methodology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/knowledge/penetration-testing/active-directory/methodology/</guid>
-      <description>Active Directory security assessment and attack techniques</description>
-    </item>
-    <item>
       <title>CTFs</title>
       <link>http://localhost:1313/experience/ctfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -76,18 +69,12 @@
       <description>&lt;p&gt;Browse my CTF writeups, categorized by type and difficulty, with solution walkthroughs.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Network Security Fundamentals</title>
-      <link>http://localhost:1313/experience/knowledge/network-security/fundamentals/</link>
+      <title>Note Base</title>
+      <link>http://localhost:1313/experience/note-base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/knowledge/network-security/fundamentals/</guid>
-      <description>Basic concepts and principles of network security</description>
-    </item>
-    <item>
-      <title>Penetration Testing Methodology</title>
-      <link>http://localhost:1313/experience/knowledge/penetration-testing/methodology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/knowledge/penetration-testing/methodology/</guid>
-      <description>Systematic approach to conducting penetration tests</description>
+      <guid>http://localhost:1313/experience/note-base/</guid>
+      <description>&lt;p&gt;[Here will be the subdomain link]
+&lt;a href=&#34;https://note-base.emcybertrack.com/&#34;&gt;https://note-base.emcybertrack.com/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>
@@ -101,12 +88,8 @@
       <link>http://localhost:1313/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tips/</guid>
-      <description>&lt;p&gt;Hands-on advice and tips for beginners and anyone seeking to excel in cybersecurity:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How to approach certification exams&lt;/li&gt;
-&lt;li&gt;Best free resources and learning paths&lt;/li&gt;
-&lt;li&gt;Community tips and personal strategies&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;[I will add in the future]&lt;br&gt;
+&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
