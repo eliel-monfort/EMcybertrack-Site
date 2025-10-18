@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/experience/note-base/</loc>
+  </url><url>
+    <loc>http://localhost:1313/experience/projects/</loc>
+  </url><url>
+    <loc>http://localhost:1313/experience/ctfs/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/100-days-learning/</loc>
     <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -42,14 +48,18 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/ctfs/</loc>
+    <loc>http://localhost:1313/experience/ctfs/crackmes/</loc>
   </url><url>
     <loc>http://localhost:1313/experience/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/note-base/</loc>
+    <loc>http://localhost:1313/experience/ctfs/hackthabox/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/projects/</loc>
+    <loc>http://localhost:1313/experience/ctfs/pwnable/</loc>
+  </url><url>
+    <loc>http://localhost:1313/experience/ctfs/rootme/</loc>
   </url><url>
     <loc>http://localhost:1313/tips/</loc>
+  </url><url>
+    <loc>http://localhost:1313/experience/ctfs/tryhackme/</loc>
   </url>
 </urlset>
