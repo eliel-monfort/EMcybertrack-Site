@@ -15,16 +15,6 @@
 
 - Add AI generated pictures to each subsection
 
-### Posts Section:
-
-- Add tags to put posts in categories
-- Home page will have most resent post
-
-### About Section:
-
-- Add real personal information an contact
-
 ### General:
 
 - Start uploading new initial content
-- fix the HackTheBox link

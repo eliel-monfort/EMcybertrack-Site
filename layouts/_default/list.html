@@ -52,7 +52,25 @@
 
     {{- $term := .Data.Term }}
 
-    <div class="posts-grid">
+    <!-- Filter Buttons - Only on Posts page -->
+    {{- if eq .Section "posts" }}
+    <div class="tag-filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        {{- $allTags := slice }}
+        {{- range $paginator.Pages }}
+            {{- if .Params.tags }}
+                {{- range .Params.tags }}
+                    {{- $allTags = $allTags | append . }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+        {{- range ($allTags | uniq) }}
+            <button class="filter-btn" data-filter="{{ . }}">{{ . }}</button>
+        {{- end }}
+    </div>
+    {{- end }}
+
+    <div class="posts-grid" id="posts-container">
         {{- range $index, $page := $paginator.Pages }}
             {{- $class := "post-entry" }}
             {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
@@ -61,7 +79,8 @@
             {{- else if $term }}
                 {{- $class = "post-entry tag-entry" }}
             {{- end }}
-            <article class="{{ $class }}">
+            
+            <article class="{{ $class }}" data-tags="{{ range $i, $tag := .Params.tags }}{{ if $i }},{{ end }}{{ $tag }}{{ end }}">
                 {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
                 {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
                 <header class="entry-header">

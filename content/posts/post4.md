@@ -1,6 +1,7 @@
 ---
 title: "Solving My First CTF Challenge"
 date: 2025-09-29
+tags: ["OSCP Preperation"]
 summary: "What I learned from a beginner CTF."
 ---
 

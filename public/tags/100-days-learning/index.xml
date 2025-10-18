@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>100-Days-Learning on EM cybertrack</title>
+    <link>http://localhost:1313/tags/100-days-learning/</link>
+    <description>Recent content in 100-Days-Learning on EM cybertrack</description>
+    <generator>Hugo -- 0.150.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/100-days-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Networking Is Essential In Cybersecurity</title>
+      <link>http://localhost:1313/posts/post2/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post2/</guid>
+      <description>The value of professional connections.</description>
+    </item>
+    <item>
+      <title>Study Tips For Cybersecurity Beginners</title>
+      <link>http://localhost:1313/posts/post3/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post3/</guid>
+      <description>Essential study strategies for newcomers.</description>
+    </item>
+    <item>
+      <title>My First Steps In Cybersecurity</title>
+      <link>http://localhost:1313/posts/post1/</link>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post1/</guid>
+      <description>How I began my cybersecurity learning journey.</description>
+    </item>
+  </channel>
+</rss>

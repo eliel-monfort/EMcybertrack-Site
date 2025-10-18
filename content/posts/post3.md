@@ -1,6 +1,7 @@
 ---
 title: "Study Tips For Cybersecurity Beginners"
 date: 2025-09-30
+tags: ["100-days-learning"]
 summary: "Essential study strategies for newcomers."
 ---
 

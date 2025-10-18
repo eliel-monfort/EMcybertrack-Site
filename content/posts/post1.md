@@ -1,6 +1,7 @@
 ---
 title: "My First Steps In Cybersecurity"
 date: 2025-09-17
+tags: ["100-days-learning"]
 summary: "How I began my cybersecurity learning journey."
 cover:
  image: "/images/posts/post1/cover-image.png"

@@ -1,6 +1,7 @@
 ---
 title: "Building a Python Project for Network Analysis"
 date: 2025-09-28
+tags: ["OSCP Preperation"]
 summary: "Launching my first open-source cybersecurity tool."
 ---
 

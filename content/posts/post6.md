@@ -1,6 +1,7 @@
 ---
 title: "Getting My First Cybersecurity Certificate"
 date: 2025-09-24
+tags: ["First Posts"]
 summary: "How I prepared for and obtained my first cert."
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Why Networking Is Essential In Cybersecurity"
 date: 2025-10-01
+tags: ["100-days-learning"]
 summary: "The value of professional connections."
 cover:
  image: "/images/posts/post2/my-image.png"

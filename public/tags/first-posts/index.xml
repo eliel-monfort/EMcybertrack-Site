@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>First Posts on EM cybertrack</title>
+    <link>http://localhost:1313/tags/first-posts/</link>
+    <description>Recent content in First Posts on EM cybertrack</description>
+    <generator>Hugo -- 0.150.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/first-posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting My First Cybersecurity Certificate</title>
+      <link>http://localhost:1313/posts/post6/</link>
+      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post6/</guid>
+      <description>How I prepared for and obtained my first cert.</description>
+    </item>
+  </channel>
+</rss>
