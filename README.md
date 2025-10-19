@@ -12,7 +12,6 @@
 - Add content to the introduction page
 - Delete unnecessary code from the project
 - Create a GitHub repository and a sub domain
-- Add the link to the note base directly to the Note Base block
 
 ### Finals Steps:
 

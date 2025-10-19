@@ -12,8 +12,9 @@
       <link>http://localhost:1313/experience/note-base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/experience/note-base/</guid>
-      <description>&lt;p&gt;[Here will be the subdomain link]
-&lt;a href=&#34;https://note-base.emcybertrack.com/&#34;&gt;https://note-base.emcybertrack.com/&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;My cybersecurity knowledge base - built to track my progress and help others grow.&lt;br&gt;
+&lt;br&gt;
+Check Out - &lt;a href=&#34;https://note-base.emcybertrack.com/&#34;&gt;Note Base&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
