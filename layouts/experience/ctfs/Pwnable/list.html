@@ -1,0 +1,58 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+    <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{ if .Content }}
+  <div class="post-content">{{ .Content }}</div>
+{{ end }}
+{{ $paginator := .Paginate (union .RegularPages .Sections) }}
+
+<div class="tag-filter-container">
+    <button class="filter-btn active" data-filter="all">All</button>
+    {{ $allTags := slice }}
+    {{ range $paginator.Pages }}
+      {{ with .Params.tags }}
+        {{ range . }}
+          {{ $allTags = $allTags | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ range ($allTags | uniq) }}
+      <button class="filter-btn" data-filter="{{ . }}">{{ . }}</button>
+    {{ end }}
+</div>
+
+<div class="posts-grid" id="posts-container">
+  {{ range $index, $page := $paginator.Pages }}
+    <article class="post-entry" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}">
+      <header class="entry-header">
+        <h2>{{ .Title }}</h2>
+      </header>
+      <div class="entry-content">
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      </div>
+      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </article>
+  {{ end }}
+</div>
+
+{{ if gt $paginator.TotalPages 1 }}
+  <footer class="page-footer">
+    <nav class="pagination">
+      {{ if $paginator.HasPrev }}
+        <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+          «&nbsp;{{ i18n "prev_page" }}&nbsp;{{ sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+        </a>
+      {{ end }}
+      {{ if $paginator.HasNext }}
+        <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+          {{ i18n "next_page" }}&nbsp;{{ add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}&nbsp;»
+        </a>
+      {{ end }}
+    </nav>
+  </footer>
+{{ end }}
+{{ end }}

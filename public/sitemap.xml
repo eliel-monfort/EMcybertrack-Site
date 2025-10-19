@@ -48,11 +48,21 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/experience/ctfs/crackmes/crackme1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/experience/ctfs/crackmes/crackme2/</loc>
+  </url><url>
     <loc>http://localhost:1313/experience/ctfs/crackmes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/easy/</loc>
   </url><url>
     <loc>http://localhost:1313/experience/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/ctfs/hackthabox/</loc>
+    <loc>http://localhost:1313/experience/ctfs/hackthebox/forest/</loc>
+  </url><url>
+    <loc>http://localhost:1313/experience/ctfs/hackthebox/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/hard/</loc>
   </url><url>
     <loc>http://localhost:1313/experience/ctfs/pwnable/</loc>
   </url><url>
@@ -61,5 +71,7 @@
     <loc>http://localhost:1313/tips/</loc>
   </url><url>
     <loc>http://localhost:1313/experience/ctfs/tryhackme/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/very-hard/</loc>
   </url>
 </urlset>

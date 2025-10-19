@@ -1,13 +1,5 @@
 # To-Do List:
 
-### Experience Section:
-
-- Make the content more minimalist
-
-### CTFs Section:
-
-- Divide all WriteUps (in each category) into tags (easy, medium, hard, insane)
-
 ### Project Section:
 
 - Add all my project like the post
